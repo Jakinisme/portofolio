@@ -7,21 +7,21 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
+  background: #0D0D0D;
+  color: #F1F1F1;
   min-height: 100vh;
   line-height: 1.6;
 }
 
 h3 {
   font-size: 1.2rem;
-  color: #1e293b;
+  color: #F1F1F1;
   margin-bottom: 0.5rem;
 }
 
 .navbar-container {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: #1A1A1A;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   padding: 1rem 0;
 }
 
@@ -40,17 +40,17 @@ h3 {
 
 .navbar-content a {
   text-decoration: none;
-  color: #222;
+  color: #F1F1F1;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .navbar-content a:hover {
-  color: #007bff;
+  color: #FF6B6B;
 }
 
 .hero-section-container {
-  background: linear-gradient(120deg, #e0e7ff 0%, #fff 100%);
+  background: linear-gradient(120deg, #1A1A1A 0%, #0D0D0D 100%);
   padding: 3rem 1rem 2rem 1rem;
 }
 
@@ -81,9 +81,9 @@ h3 {
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  background: #dbeafe;
-  border: 3px solid #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #1A1A1A;
+  border: 3px solid #FF6B6B;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .profile-text {
@@ -96,12 +96,12 @@ h3 {
 .profile-text h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  color: #1e293b;
+  color: #F1F1F1;
 }
 
 .profile-text p {
   font-size: 1.1rem;
-  color: #475569;
+  color: #F1F1F1;
 }
 
 .profile-text h3 {
@@ -110,7 +110,7 @@ h3 {
 }
 
 .tech-container {
-  background: #fff;
+  background: linear-gradient(120deg, #1A1A1A 0%, #0D0D0D 100%);
   padding: 2rem 1rem;
 }
 
@@ -125,7 +125,7 @@ h3 {
 .tech-content h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #1e293b;
+  color: #F1F1F1;
 }
 
 .tech-grid {
@@ -136,13 +136,13 @@ h3 {
 }
 
 .tech {
-  background: #e0e7ff;
-  color: #1e293b;
+  background: #1A1A1A;
+  color: #F1F1F1;
   padding: 0.7rem 1.5rem;
   border-radius: 1.5rem;
   font-weight: 500;
   font-size: 1rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +153,7 @@ h3 {
 /* Progress Bar Styles */
 .progress-bar-container {
   width: 100px;
-  background: #c7d2fe;
+  background: #1A1A1A;
   border-radius: 1rem;
   height: 12px;
   margin-top: 0.5rem;
@@ -163,7 +163,7 @@ h3 {
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #6366f1 60%, #818cf8 100%);
+  background: linear-gradient(90deg, #FFA500 60%, #FF6B6B 100%);
   border-radius: 1rem 0 0 1rem;
   transition: width 0.6s cubic-bezier(.4,2,.3,1);
 }
@@ -174,13 +174,13 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.85rem;
-  color: #1e293b;
+  color: #F1F1F1;
   font-weight: 600;
-  text-shadow: 0 1px 2px #fff8;
+  text-shadow: 0 1px 2px #0D0D0D88;
 }
 
 .project-container {
-  background: #f1f5f9;
+  background: linear-gradient(120deg, #1A1A1A 0%, #0D0D0D 100%);
   padding: 2.5rem 1rem;
 }
 
@@ -195,13 +195,13 @@ h3 {
 .project-content h1 {
   font-size: 1.7rem;
   margin-bottom: 2rem;
-  color: #1e293b;
+  color: #ffffff;
 }
 
 .project-item {
-  background: #fff;
+  background: #1A1A1A;
   border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
   padding: 1.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -216,7 +216,7 @@ h3 {
   width: 100%;
   max-width: 350px;
   border-radius: 0.7rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
 }
 
 .link-btn {
@@ -224,8 +224,8 @@ h3 {
   margin-right: 0.7rem;
   margin-top: 0.3rem;
   padding: 0.5rem 1.2rem;
-  background: #6366f1;
-  color: #fff;
+  background: #FF6B6B;
+  color: #F1F1F1;
   border-radius: 1.2rem;
   text-decoration: none;
   font-size: 1rem;
@@ -234,13 +234,13 @@ h3 {
 }
 
 .link-btn:hover {
-  background: #4338ca;
+  background: #FFA500;
 }
 
 .footer-container {
-  background: #fff;
+  background: #1A1A1A;
   padding: 1.2rem 0;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
   margin-top: 2rem;
 }
 
@@ -248,20 +248,20 @@ h3 {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  color: #64748b;
+  color: #F1F1F1;
   font-size: 1rem;
 }
 
 /* About Me Short Section */
 .about-me-short {
-  background: #f1f5f9;
-  border-left: 4px solid #6366f1;
+  background: #1A1A1A;
+  border-left: 4px solid #FF6B6B;
   border-radius: 0.7rem;
   padding: 1rem 1.2rem;
   margin-top: 0.7rem;
   font-size: 1.05rem;
-  color: #334155;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  color: #F1F1F1;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
   max-width: 500px;
   line-height: 1.7;
   margin-bottom: 0.7rem;
@@ -278,6 +278,7 @@ h3 {
   text-align: center;
   letter-spacing: 0.01em;
   width: 100%;
+  color: #FF6B6B;
 }
 
 /* Responsive Styles */

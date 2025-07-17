@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
+  background: #0D0D0D;
+  color: #F1F1F1;
   min-height: 100vh;
   line-height: 1.6;
 }
 
 .navbar-container {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: #1A1A1A;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   padding: 1rem 0;
 }
 
@@ -34,11 +34,11 @@ body {
 
 .navbar-content a {
   text-decoration: none;
-  color: #222;
+  color: #F1F1F1;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .navbar-content a:hover {
-  color: #007bff;
+  color: #FF6B6B;
 }
