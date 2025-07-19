@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #0D0D0D;
+  background: linear-gradient(120deg, #1A1A1A 0%, #0D0D0D 100%);
   color: #F1F1F1;
   min-height: 100vh;
   line-height: 1.6;
@@ -251,20 +251,58 @@ h3 {
   background: #FFA500;
 }
 
-.footer-container {
-  background: #1A1A1A;
-  padding: 1.2rem 0;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
-  margin-top: 2rem;
+.fade-in {
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.footer-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-  color: #F1F1F1;
-  font-size: 1rem;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* Staggered Fade In Animation for Landing Page */
+.hero-section-container.fade-in {
+  animation-delay: 0.1s;
+}
+.tech-container.fade-in {
+  animation-delay: 0.5s;
+}
+.project-container.fade-in {
+  animation-delay: 0.9s;
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background: #181818;
+  color: #B0B0B0;
+  text-align: center;
+  padding: 1.1rem 0 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #232323;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.12);
+}
+
+.footer span {
+  color: #FF6B6B;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    font-size: 0.92rem;
+    padding: 0.8rem 0 0.7rem 0;
+  }
+}
+
 
 /* About Me Short Section */
 .about-me-short {

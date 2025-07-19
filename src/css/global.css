@@ -111,3 +111,131 @@ body {
     font-size: 1rem;
   }
 }
+
+/* Contact Page Styles */
+.contact-container {
+  background: linear-gradient(120deg, #1A1A1A 0%, #0D0D0D 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.97);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.35);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-in {
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-text h1 {
+  font-size: 2.2rem;
+  color: #FF6B6B;
+  margin-bottom: 1.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact-text p {
+  font-size: 1.13rem;
+  color: #F1F1F1;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-list li {
+  font-size: 1.08rem;
+  color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.contact-list a {
+  color: #FF6B6B;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-shadow: 0 2px 8px rgba(255,107,107,0.15);
+}
+
+.contact-list a:hover {
+  color: #FFD166;
+  text-shadow: 0 4px 16px rgba(255,209,102,0.25);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .contact-content {
+    padding: 1.2rem 0.7rem;
+  }
+  .contact-text h1 {
+    font-size: 1.4rem;
+  }
+  .contact-text p {
+    font-size: 1rem;
+  }
+  .contact-list li {
+    font-size: 0.98rem;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background: #181818;
+  color: #B0B0B0;
+  text-align: center;
+  padding: 1.1rem 0 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #232323;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.12);
+}
+
+.footer span {
+  color: #FF6B6B;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    font-size: 0.92rem;
+    padding: 0.8rem 0 0.7rem 0;
+  }
+}
