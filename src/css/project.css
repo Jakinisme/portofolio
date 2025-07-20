@@ -113,8 +113,6 @@
   box-shadow: 0 4px 24px rgba(255,209,102,0.18);
 }
 
-/* Enhanced Mobile Responsive Design for Project Page */
-
 /* Base mobile-first approach */
 @media (max-width: 768px) {
   .project-container {

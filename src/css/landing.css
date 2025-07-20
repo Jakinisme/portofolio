@@ -424,6 +424,11 @@ h3 {
     padding: 0.4rem 0.6rem;
   }
   
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
+  }
+  
   .hero-section-container {
     padding: 1.5rem 0.5rem 1rem 0.5rem;
   }
@@ -503,6 +508,11 @@ h3 {
     padding: 0.3rem 0.5rem;
   }
   
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
+  }
+  
   .profile-image img {
     width: 120px;
     height: 120px;
@@ -569,6 +579,11 @@ h3 {
     padding: 0.25rem 0.4rem;
     flex: 1;
     min-width: 60px;
+  }
+  
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
   }
   
   .profile-image img {
@@ -778,6 +793,10 @@ h3 {
     align-items: center;
     padding: 0 1rem;
   }
+  
+  .nav-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -858,6 +877,11 @@ h3 {
   
   body {
     -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
   }
 }
 

@@ -265,6 +265,11 @@ body {
     transform: translateY(-2px);
   }
   
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
+  }
+  
   /* About page mobile styles */
   .about-container {
     padding: 2rem 1rem;
@@ -335,6 +340,11 @@ body {
   .navbar-content a {
     font-size: 0.85rem;
     padding: 0.4rem 0.6rem;
+  }
+  
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
   }
   
   /* About page styles */
@@ -410,6 +420,11 @@ body {
     padding: 0.3rem 0.5rem;
   }
   
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
+  }
+  
   /* About page styles */
   .about-container {
     padding: 1rem 0.3rem;
@@ -481,6 +496,11 @@ body {
     padding: 0.25rem 0.4rem;
     flex: 1;
     min-width: 60px;
+  }
+  
+  /* Hide arrow on mobile */
+  .nav-arrow {
+    display: none;
   }
   
   /* About page styles */
