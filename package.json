@@ -1,0 +1,30 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakinisme/portofolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakinisme/portofolio/issues"
+  },
+  "homepage": "https://github.com/Jakinisme/portofolio#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-minify-html": "^0.12.0",
+    "html-minifier": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
