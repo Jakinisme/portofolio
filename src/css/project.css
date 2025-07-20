@@ -113,41 +113,345 @@
   box-shadow: 0 4px 24px rgba(255,209,102,0.18);
 }
 
-@media (max-width: 900px) {
+/* Enhanced Mobile Responsive Design for Project Page */
+
+/* Base mobile-first approach */
+@media (max-width: 768px) {
+  .project-container {
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+  
   .project-content {
+    gap: 2rem;
     padding: 0 0.5rem;
   }
-  .project-item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 1rem;
-    gap: 1.2rem;
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
   }
+  
+  .project-item {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
   .image-project {
     width: 100%;
     height: 180px;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .project-text {
+    gap: 0.8rem;
+    align-items: center;
+  }
+  
+  .project-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .project-text p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .link-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1.5rem;
+    min-width: 120px;
+    display: inline-block;
   }
 }
 
 @media (max-width: 600px) {
   .project-container {
-    padding: 1.2rem 0.2rem 1rem 0.2rem;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
   }
+  
+  .project-content {
+    gap: 1.5rem;
+    padding: 0 0.3rem;
+  }
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
   .project-item {
-    padding: 0.7rem 0.3rem;
+    padding: 1rem 0.8rem;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
   }
+  
+  .image-project {
+    height: 150px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .project-text {
+    gap: 0.6rem;
+  }
+  
+  .project-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-text p {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .link-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.4rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    padding: 1rem 0.3rem 0.8rem 0.3rem;
+  }
+  
+  .project-content {
+    gap: 1.2rem;
+    padding: 0 0.2rem;
+  }
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .project-item {
+    padding: 0.8rem 0.6rem;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
   .image-project {
     height: 120px;
+    margin-bottom: 0.6rem;
   }
+  
+  .project-text {
+    gap: 0.5rem;
+  }
+  
   .project-text h3 {
     font-size: 1.1rem;
+    margin-bottom: 0.2rem;
   }
+  
   .project-text p {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
   }
+  
   .link-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.3rem;
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 360px) {
+  .project-container {
+    padding: 0.8rem 0.2rem 0.6rem 0.2rem;
+  }
+  
+  .project-content {
+    gap: 1rem;
+    padding: 0 0.1rem;
+  }
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .project-item {
+    padding: 0.6rem 0.4rem;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .image-project {
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-text {
+    gap: 0.4rem;
+  }
+  
+  .project-text h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-text p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .link-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.3rem;
+    min-width: 80px;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .link-btn {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-item {
+    cursor: pointer;
+  }
+  
+  .project-item:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .project-container {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  
+  .project-content {
+    gap: 1rem;
+  }
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-item {
+    padding: 0.8rem 1rem;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .image-project {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  
+  .project-text h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-text p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .link-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .image-project img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .project-item:hover {
+    transform: none;
+  }
+  
+  .link-btn:hover {
+    transform: none;
+  }
+  
+  .project-item:active {
+    transform: none;
+  }
+}
+
+/* Better spacing for very small screens */
+@media (max-width: 320px) {
+  .project-container {
+    padding: 0.6rem 0.1rem 0.4rem 0.1rem;
+  }
+  
+  .project-content {
+    gap: 0.8rem;
+  }
+  
+  .project-content h1,
+  .project-content h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-item {
+    padding: 0.5rem 0.3rem;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .image-project {
+    height: 80px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .project-text h3 {
     font-size: 0.95rem;
-    padding: 0.45rem 1rem;
+  }
+  
+  .project-text p {
+    font-size: 0.8rem;
+  }
+  
+  .link-btn {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    min-width: 70px;
   }
 }

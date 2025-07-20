@@ -10,12 +10,22 @@
 <body>
     <div class="navbar-container">
         <div class="navbar-content">
-            <a href="index.html" class="active-link">Home
-                <span class="nav-arrow">&#8595;</span>
-            </a>
-            <a href="src/page/about.html">About Me</a>
-            <a href="src/page/contact.html">Contact</a>
-            <a href="src/page/project.html">My Projects</a>
+            <!-- Mobile hamburger menu -->
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Desktop navigation -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active-link">Home
+                    <span class="nav-arrow">&#8595;</span>
+                </a>
+                <a href="src/page/about.html">About Me</a>
+                <a href="src/page/contact.html">Contact</a>
+                <a href="src/page/project.html">My Projects</a>
+            </div>
         </div>
     </div>
 
@@ -97,5 +107,10 @@
 <footer class="footer">
     &copy; 2025 <span>Zaky</span>. All rights reserved.
 </footer>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<script src="src/screen.js"></script>
 </body>
 </html>

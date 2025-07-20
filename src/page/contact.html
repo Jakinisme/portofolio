@@ -9,18 +9,28 @@
 <body>
     <div class="navbar-container">
         <div class="navbar-content">
-            <div class="nav-link-wrapper">
-                <a href="../../index.html">Home</a>
+            <!-- Mobile hamburger menu -->
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="nav-link-wrapper">
-                <a href="../page/about.html">About Me</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="../page/contact.html" class="active-link">Contact</a>
-                <span class="nav-arrow">&#8595;</span>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="../page/project.html">My Projects</a>
+            
+            <!-- Desktop navigation -->
+            <div class="nav-links" id="navLinks">
+                <div class="nav-link-wrapper">
+                    <a href="../../index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="../page/about.html">About Me</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="../page/contact.html" class="active-link">Contact</a>
+                    <span class="nav-arrow">&#8595;</span>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="../page/project.html">My Projects</a>
+                </div>
             </div>
         </div>
     </div>
@@ -33,7 +43,6 @@
                 <ul class="contact-list">
                     <li><strong>Email:</strong> <a href="mailto:adwashark@gmail.com">adwashark@gmail.com</a></li>
                     <li><strong>Github:</strong> <a href="https://github.com/Jakinisme" target="_blank">github.com/Jakinisme</a></li>
-                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/6285173434503" target="_blank">+62 851-7343-4503</a></li>
                 </ul>
             </div>
         </div>
@@ -41,5 +50,10 @@
     <footer class="footer">
     &copy; 2025 <span>Zaky</span>. All rights reserved.
 </footer>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<script src="../screen.js"></script>
 </body>
 </html>
